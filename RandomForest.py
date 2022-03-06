@@ -19,7 +19,7 @@ def RandomForst_pred(age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang,
 
     NewData = [[38,1,2,138,175,0,1,173,0,0,2,4,2], [age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]]
    
-    result = clf.predict(NewData)[1]
+    result = classifier.predict(NewData)[1]
  
     return result
     
