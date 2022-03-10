@@ -88,7 +88,7 @@ def getvalue():
     
     #print(age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal)
     try:
-        op = SVM.svm_pred(age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal)
+        op = RandomForst.RandomForst_pred(age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal)
     except Exception as e:
         print(type(e).__name__)
     global speech
